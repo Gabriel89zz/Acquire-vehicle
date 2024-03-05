@@ -39,6 +39,7 @@
             btnClear = new Button();
             cbClass = new ComboBox();
             label6 = new Label();
+            btnDrift = new Button();
             SuspendLayout();
             // 
             // label1
@@ -111,13 +112,13 @@
             btnStartCar.FlatAppearance.BorderSize = 0;
             btnStartCar.FlatAppearance.MouseOverBackColor = Color.LimeGreen;
             btnStartCar.FlatStyle = FlatStyle.Flat;
-            btnStartCar.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStartCar.Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStartCar.ForeColor = SystemColors.ButtonHighlight;
-            btnStartCar.Location = new Point(177, 372);
+            btnStartCar.Location = new Point(168, 316);
             btnStartCar.Name = "btnStartCar";
-            btnStartCar.Size = new Size(95, 40);
+            btnStartCar.Size = new Size(131, 40);
             btnStartCar.TabIndex = 7;
-            btnStartCar.Text = "Start Car";
+            btnStartCar.Text = "Start Vehicle";
             btnStartCar.UseVisualStyleBackColor = false;
             btnStartCar.Click += btnStartCar_Click;
             // 
@@ -129,7 +130,7 @@
             btnClear.FlatStyle = FlatStyle.Flat;
             btnClear.Font = new Font("Microsoft YaHei UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClear.ForeColor = SystemColors.Control;
-            btnClear.Location = new Point(295, 372);
+            btnClear.Location = new Point(322, 316);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(96, 40);
             btnClear.TabIndex = 8;
@@ -156,11 +157,28 @@
             label6.TabIndex = 11;
             label6.Text = "Class:";
             // 
+            // btnDrift
+            // 
+            btnDrift.BackColor = SystemColors.ActiveCaptionText;
+            btnDrift.FlatAppearance.BorderSize = 0;
+            btnDrift.FlatAppearance.MouseOverBackColor = Color.DarkMagenta;
+            btnDrift.FlatStyle = FlatStyle.Flat;
+            btnDrift.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDrift.ForeColor = SystemColors.ButtonHighlight;
+            btnDrift.Location = new Point(246, 372);
+            btnDrift.Name = "btnDrift";
+            btnDrift.Size = new Size(95, 40);
+            btnDrift.TabIndex = 13;
+            btnDrift.Text = "Drift";
+            btnDrift.UseVisualStyleBackColor = false;
+            btnDrift.Click += btnDrift_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(595, 450);
+            Controls.Add(btnDrift);
             Controls.Add(cbClass);
             Controls.Add(label6);
             Controls.Add(btnClear);
@@ -191,5 +209,6 @@
         private Button btnClear;
         private Label label6;
         private ComboBox cbClass;
+        private Button btnDrift;
     }
 }

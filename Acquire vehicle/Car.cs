@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acquire_vehicle
 {
-    internal class Car:Vehicle,IVehicle
+    internal class Car:Vehicle,IVehicle,IDrift
     {
         public Car() : base()
         {
@@ -37,6 +37,11 @@ namespace Acquire_vehicle
             }
 
             return "The cost of your car is: " +"$" + cost;
+        }
+
+        public string Drift()
+        {
+            return "I'm drifting in the mountains of Japan";
         }
     }
 }
